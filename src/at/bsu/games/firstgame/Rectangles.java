@@ -1,7 +1,6 @@
 package at.bsu.games.firstgame;
 
 import org.newdawn.slick.*;
-import org.newdawn.slick.tests.AnimationTest;
 
 public class Rectangles extends BasicGame {
     private float x;
