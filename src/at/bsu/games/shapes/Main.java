@@ -25,17 +25,17 @@ public class Main extends BasicGame{
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
         {
-
+            new Rectangle(200, 300, 200, 500, 500);
         }
     }
 
     @Override
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
-
+    graphics.drawRect(200,400,300,200);
     }
     public static void main(String[] argv) {
         try {
-            AppGameContainer container = new AppGameContainer(new Rectangle(900.0, 600, 300, 400, 400));
+            AppGameContainer container = new AppGameContainer(new Main("main"));
             container.setDisplayMode(800,600,false);
             container.start();
         } catch (SlickException e) {
