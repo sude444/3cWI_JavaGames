@@ -89,5 +89,5 @@ public class Rectangle {
 
     public float getLength() {
         return length;
-    }
+}
 }
