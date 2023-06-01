@@ -29,12 +29,30 @@ public class Main extends BasicGame {
     }
 
     @Override
-    public void update(GameContainer gameContainer, int i) throws SlickException {
-
+    public void update(GameContainer gameContainer, int delta) throws SlickException {
+        for(Rectangle rectangle:this.rectangleList)
+        {
+            rectangle.update(delta);
+        }
     }
 
     @Override
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
 
+        for(Rectangle rectangle:this.rectangleList)
+        {
+            rectangle.render(graphics);
+        }
+    }
+
+    public static void main(String[] args){
+        
+        try {
+            AppGameContainer container = new AppGameContainer(new Main("RectangleGame"));
+            container.setDisplayMode(800,600,false);
+            container.start();
+        } catch (SlickException e) {
+            e.printStackTrace();
+        }
     }
 }
