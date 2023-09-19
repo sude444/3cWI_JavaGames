@@ -1,5 +1,7 @@
 package at.bsu.games.plane;
 
+import org.newdawn.slick.tests.SoundTest;
+
 public class Plane {
 
     private String color;
@@ -23,6 +25,17 @@ public class Plane {
 
     //Funktionen
 
+    public void drive(){
+        System.out.println("The plane is driving.");
+    }
+
+    public void takeOff(){
+        System.out.println("The plane is taking off.");
+    }
+
+    public void land(){
+        System.out.println("The plane is landing.");
+    }
 
 
     //Getter and Setter
