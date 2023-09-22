@@ -12,8 +12,13 @@ public class Plane {
     private int wheels;
     private float weight;
 
+    private Engine engine;
+
+
+
+
     //Constructor
-    public Plane(String color, float width, float height, int toilet, int windows, int wheels, float weight) {
+    public Plane(String color, float width, float height, int toilet, int windows, int wheels, float weight, Engine engine) {
         this.color = color;
         this.width = width;
         this.height = height;
@@ -21,7 +26,10 @@ public class Plane {
         this.windows = windows;
         this.wheels = wheels;
         this.weight = weight;
+        this.engine = engine;
     }
+
+
 
     //Funktionen
 
@@ -94,5 +102,13 @@ public class Plane {
 
     public void setWeight(float weight) {
         this.weight = weight;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 }

@@ -2,7 +2,6 @@ package at.bsu.games.objects;
 
 import at.bsu.games.firstgame.Rectangles;
 import org.newdawn.slick.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -46,7 +45,7 @@ public class Main extends BasicGame {
     }
 
     public static void main(String[] args){
-        
+
         try {
             AppGameContainer container = new AppGameContainer(new Main("RectangleGame"));
             container.setDisplayMode(800,600,false);
